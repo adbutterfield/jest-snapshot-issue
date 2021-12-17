@@ -47,41 +47,6 @@ const componentConfigs = componentsToBundle
   }, [])
   .filter(Boolean);
 
-// Create rollup configs for the other files we want to bundle
-const otherConfigs = otherFilesToBundle
-  .reduce((acc, dirName) => {
-    // Make a list of the full path to all the files we want to bundle in each directory.
-    return [
-      ...acc,
-      ...readdirSync(path.join('src', dirName))
-        // Exclude test files
-        .filter((fileName) => !/\.test\.tsx$/.test(fileName))
-        .map((filename) => path.join('src', dirName, filename)),
-    ];
-  }, [])
-  .map((fileName) => ({
-    ...sharedConfig,
-    input: fileName,
-    output: {
-      file: fileName.replace('src', 'build').replace(/\.ts$/, '.js'),
-      format: 'cjs',
-      exports: 'named',
-      sourcemap: true,
-    },
-  }));
-
-// Create rollup config for the index file (makes one big bundle of the entire component library)
-const indexFileConfig = {
-  ...sharedConfig,
-  input: path.join('src', 'index.ts'),
-  output: {
-    file: path.join('build', 'index.js'),
-    format: 'cjs',
-    exports: 'named',
-    sourcemap: true,
-  },
-};
-
-const allConfigs = [...componentConfigs, ...otherConfigs, indexFileConfig];
+const allConfigs = [...componentConfigs];
 
 export default allConfigs;

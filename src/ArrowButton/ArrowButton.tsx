@@ -1,27 +1,27 @@
 import React from 'react';
-import ArrowButtonBase from './ArrowButton.styles';
+import Loading from '../Loading';
 
 export type ArrowButtonProps = {
   loading?: boolean;
-  disabled?: boolean;
 } & (React.ComponentPropsWithoutRef<'button'>);
 
 const ArrowButton: React.FC<ArrowButtonProps> = (props) => {
   const {
     children,
     loading = false,
-    disabled = false,
     ...rest
   } = props;
 
   return (
-    <ArrowButtonBase loading={loading} disabled={disabled} {...rest}>{children}</ArrowButtonBase>
+    <button {...rest}>
+      {children}
+      {loading ? <Loading /> : null}
+    </button>
   );
 };
 
 ArrowButton.defaultProps = {
   loading: false,
-  disabled: false,
 };
 
 export default ArrowButton;
