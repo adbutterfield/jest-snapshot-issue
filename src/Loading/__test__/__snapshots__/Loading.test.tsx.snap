@@ -1,22 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArrowButton renders without crashing 1`] = `
-<div>
-  <button>
-    arrow-button
-  </button>
-</div>
-`;
-
-exports[`ArrowButton renders without crashing with prop loading false 1`] = `
-<div>
-  <button>
-    arrow-button
-  </button>
-</div>
-`;
-
-exports[`ArrowButton renders without crashing with prop loading true 1`] = `
+exports[`Loading renders without crashing 1`] = `
 .c0 {
   color: inherit;
   display: inline-block;
@@ -48,19 +32,17 @@ exports[`ArrowButton renders without crashing with prop loading true 1`] = `
 }
 
 <div>
-  <button>
-    arrow-button
+  <div
+    class="c0"
+    data-testid="loading"
+  >
     <div
-      class="c0"
+      class="c1"
     >
-      <div
-        class="c1"
-      >
-        <div />
-        <div />
-        <div />
-      </div>
+      <div />
+      <div />
+      <div />
     </div>
-  </button>
+  </div>
 </div>
 `;
