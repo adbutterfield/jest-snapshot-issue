@@ -2,56 +2,17 @@
 
 exports[`Loading renders without crashing 1`] = `
 .c0 {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  color: #333333;
-  font-family: 'Source Sans Pro',Meiryo,'メイリオ','Hiragino Kaku Gothic ProN W3','ヒラギノ角ゴ ProN W3',sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 1.15;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
   color: inherit;
   display: inline-block;
   position: absolute;
 }
 
-.c0::before,
-.c0::after {
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  box-sizing: border-box;
-}
-
 .c1 {
-  box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
   color: inherit;
-}
-
-.c1::before,
-.c1::after {
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  box-sizing: border-box;
 }
 
 .c1 div {
-  box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
   color: inherit;
-}
-
-.c1 div::before,
-.c1 div::after {
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  box-sizing: border-box;
 }
 
 .c1 > div {
