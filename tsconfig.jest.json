@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "commonjs",
+    "typeRoots": ["src/**/*.d.ts", "./node_modules/@types"]
+  },
+  "include": ["src", "src/", "src/**/*", "scripts", "scripts/", "scripts/*.ts", "src/styleguide", "src/styleguide/"],
+  "exclude": ["node_modules"]
+}

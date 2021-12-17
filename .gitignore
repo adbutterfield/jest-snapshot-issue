@@ -1,0 +1,11 @@
+node_modules
+coverage
+dist
+build
+scss
+docs
+junit.xml
+__diff_output__
+eslint-error-report.json
+*.build.test.tsx
+# *.build.test.tsx.snap

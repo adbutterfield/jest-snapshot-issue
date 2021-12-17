@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "declaration": true,
+    "declarationDir": "./build",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./build",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES5",
+    "typeRoots": ["src/types.d.ts", "./node_modules/@types"]
+  },
+  "include": ["src", "src/", "src/**/*.ts", "src/**/*.tsx", "src/types.d.ts"],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.*",
+    "src/**/*.screenshot.*",
+    "src/**/__screenshots__",
+    "src/styleguide",
+    "src/**/*.md",
+    "src/setupTests.ts"
+  ]
+}
