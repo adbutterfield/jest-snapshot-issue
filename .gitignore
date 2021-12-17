@@ -8,4 +8,4 @@ junit.xml
 __diff_output__
 eslint-error-report.json
 *.build.test.tsx
-*.build.test.tsx.snap
+# *.build.test.tsx.snap
